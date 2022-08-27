@@ -12,7 +12,7 @@ $page = (isset($_GET['page']))?$_GET['page']:NULL;
 
 switch ($page){
     case "product":
-        include 'product.php';
+        include ('product.php');
         break;
     case "about":
         include 'about.php';
@@ -21,9 +21,7 @@ switch ($page){
         include 'contact.php';
         break; 
     default:
-    break;      
-
-                
+    break;               
 }
 
 ?>
